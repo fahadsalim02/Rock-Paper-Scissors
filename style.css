@@ -1,0 +1,127 @@
+body{
+    transform: scale(0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 100PX;
+    background-image: linear-gradient( aqua,rgb(208, 243, 242));
+}
+
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-gap: 25px;
+    opacity: 0;
+    animation: slideFromBottom 0.7s ease-out forwards;
+}
+
+.R{
+    /* background-color: rgb(6, 159, 225); */
+    background-image: linear-gradient(-45deg, rgb(4, 242, 234),rgb(14, 113, 252));
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    width:130px;
+    height: 130px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    text-shadow: 1px 1px 10px rgb(8, 166, 229);
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+
+ .R:hover{
+    border: solid 2px;
+    background-image: linear-gradient(90deg, rgb(4, 242, 234),rgb(14, 113, 252));
+    transform: scale(1.1);
+ } 
+
+ .title{
+    text-shadow: 3px 4px 10px rgb(8, 166, 229);
+    font-size: 3em;
+    opacity: 0;
+    animation: slideFromBottom 0.5s ease-out forwards;
+}
+
+
+ #compheading{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2em;
+ }
+
+#computer{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    
+#resheading{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#result{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+
+.ScoreBoard{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-gap: 10PX;
+}
+
+#SU{
+    font-weight: 700;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-45deg, rgb(4, 203, 196),rgb(14, 113, 252));
+    width: 150px;
+    height: 100px;
+}
+
+#SC{
+    font-weight: 700;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-45deg, rgb(4, 203, 196),rgb(14, 113, 252));
+    width: 150px;
+    height: 100px;
+}
