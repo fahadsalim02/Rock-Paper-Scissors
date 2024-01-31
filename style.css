@@ -45,6 +45,7 @@ body{
     padding: 10px;
     margin: 5px;
     border: 1px solid #ccc;
+    transition: 500ms;
 }
 
 
@@ -52,6 +53,7 @@ body{
     border: solid 2px;
     background-image: linear-gradient(90deg, rgb(4, 242, 234),rgb(14, 113, 252));
     transform: scale(1.1);
+    transition: 500ms;
  } 
 
  .title{
